@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <script LANGUAGE="JavaScript">
+        function ValidateForm(form) {
+
+            var x = document.forms[2]["fname"].value;
+            ErrorText = "";
+            if ((form.color[0].checked == false) && (form.color[1].checked == false)) {
+                alert("Please choose your color: Blue or Red");
+                return false;
+            } else if (x == "")
+
+                alert("Name must be filled out");
+            return false;
+
+
+
+
+            if (ErrorText = "") {
+                form.submit()
+            }
+
+        }
+    </script>
+</head>
+
+
+<body>
+    <form name="feedback" action="#" method=post>
+        Your Fav color: <input type="radio" name="color" value="Blue">Blue
+        <input type="radio" name="color" value="Red">Red
+        <input type="reset" value="Reset"> Name: <input type="text" name="fname">
+        <input type="button" name="SubmitButton" value="Submit" onClick="ValidateForm(this.form)">
+
+
+
+    </form>
+
+
+</body>
+
+</html>
+
+
+<!-- end of file -->
+<!-- Logical operators -->
+
+<!-- this is the or operator || -->
+<!--    and operator && -->
+<!-- Logically equivalent == -->
+<!-- not ! -->
+
+<!--  if statement -->
+<!-- else -->
+<!-- else if -->
+<!-- switch -->

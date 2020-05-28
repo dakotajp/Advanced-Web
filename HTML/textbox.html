@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/textboxProject.css">
+    <script type="text/javascript" src="../JavaScript/textBox.js"></script>
+</head>
+
+<body>
+
+
+    <h1 id="mainTitle">My Form</h1>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        First Name: <input type="text" name="fname"><br> Last Name:<input type="text" name="lname"><br> Age:
+        <input type="text" name="age"><br> Favorite Color:<br> <input type="radio" name="color" value="Blue" id="Blue" onclick="changeTitleCSSStyle(document.getElementById('Blue').value)">Blue<br>
+        <input type="radio" name="color" value="Red" id="Red" onclick="changeTitleCSSStyle(document.getElementById('Red').value)">Red<br>
+        <input type="radio" name="color" value="Green" id="Green" onclick="changeTitleCSSStyle(document.getElementById('Green').value)">Green<br>
+        <input type="radio" name="color" value="Other" id="OtherColor" value="run external javascript">Other<br>
+        <input type="reset" value="Reset"><br>
+        <input type="button" name="SubmitButton" value="Submit" onClick="validateForm()">
+
+    </form>
+
+</body>
+
+</html>

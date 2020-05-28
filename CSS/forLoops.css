@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+    background-color: lightGreen;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+p,
+h1 {
+    font-family: cursive
+}
+
+p,
+img,
+button {
+    margin-left: 50px;
+}

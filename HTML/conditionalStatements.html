@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function checkValue() {
+            var a = document.forms["myForm"]["a"].value;
+            if (a % 2 == 1) {
+
+                alert(a);
+                alert("is an odd number");
+                return true;
+            } else {
+
+                alert(" a is an even number");
+                return true;
+            }
+
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return checkValue()" method="post">
+        Enter a Number:
+        <input type="text" name="a"><br>
+        <input type="reset" value="Reset"><br>
+        <input type="button" name="SubmitButton" value="Submit" onClick="checkValue()">
+
+    </form>
+</body>
+
+</html>

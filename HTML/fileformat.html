@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // this is where all of our JavaScript functions
+        // will be located
+
+        function printName() {
+
+            var firstName = document.forms["myform"]["myName"].value;
+            alert(firstName);
+
+        }
+    </script>
+</head>
+
+<body>
+    <!-- This is where the forms will go -->
+    <form name="myform" onsubmit="return printName()" method="post">
+        First Name: <input type="text" name="myName"><br>
+        <input type="button" name="SubmitButton" value="Submit" onClick="printName(this.form)">
+
+    </form>
+
+</body>
+
+</html>
